@@ -5,6 +5,7 @@ import { Header } from "../components/Header";
 import { CountryCard } from "../components/CountryCard";
 import { LoadingSpinner } from "../components/LoadingSpinner";
 import { ErrorMessage } from "../components/ErrorMessage";
+import { Footer } from "../components/Footer";
 import Filters from "@/components/Filters";
 import useSpecialOptions from "@/hooks/useSpecialOptions";
 
@@ -61,7 +62,7 @@ const Home: React.FC = () => {
           languages={languages}
         />
         {filteredCountries.length === 0 ? (
-          <div className="text-center p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-[1.02]">
+          <div className="text-center p-8 bg-white dark:bg-[#252525] rounded-xl shadow-lg transform transition-all duration-300 hover:scale-[1.02]">
             <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
               No countries found
             </p>
@@ -74,6 +75,7 @@ const Home: React.FC = () => {
           </div>
         )}
       </main>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import type { FC } from "react";
 
 interface ButtonProps {
   onClick: () => void;
@@ -7,10 +7,15 @@ interface ButtonProps {
   ariaLabel: string;
 }
 
-export const Button: FC<ButtonProps> = ({ onClick, children, className = '', ariaLabel }) => (
+export const Button: FC<ButtonProps> = ({
+  onClick,
+  children,
+  className = "",
+  ariaLabel,
+}) => (
   <button
     onClick={onClick}
-    className={`px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition ${className}`}
+    className={`px-4 py-2 bg-white text-black  rounded-md hover:border-2 border-gray-400 transition ${className}`}
     aria-label={ariaLabel}
   >
     {children}

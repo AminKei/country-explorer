@@ -9,7 +9,7 @@ interface LayoutProps {
 }
 
 export const metadata = {
-  title: "Country Explorer(Aspa)",
+  title: "Country Explorer",
   description: "Explore countries with RESTCountries API",
 };
 
